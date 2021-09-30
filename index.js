@@ -146,7 +146,7 @@ const quizDb = [
       showScore.innerHTML = ` 
       <h3>You are ${score}/${quizDb.length} cyber aware! </h3> 
       <button class="btn" onclick="location.reload()"> 
-      Try again
+      Play again
       </button>
       
       `;
