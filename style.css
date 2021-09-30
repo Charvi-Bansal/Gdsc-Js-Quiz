@@ -12,12 +12,38 @@ html {
   font-size: 62.5%;
 }
 
+a {
+  text-decoration: none;
+}
+
+.web-title{
+  font-family: 'Press Start 2P', cursive;
+  color: #dff9fb;
+  font-size: large;
+}
+
+.navbar{
+  background-color:#30336b;
+  height: 75px;
+  /*border-radius: 10%;*/
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.text-image {
+  display: flex;
+  align-items: center;
+}
+
 .main-div {
   width: 100vw;
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background-color: #182C61;
+  background-color: #130f40;
 }
 /* hsl(206, 92%, 94%) */
 .inner-div {
@@ -89,4 +115,59 @@ input {
 
 .scoreArea {
   display: none;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+  .inner-div {
+    width: 80vw;
+    background-color: #fff;
+    padding: 2.7rem; /*left and right padding*/
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+  }
+
+  .inner-div h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    /* margin: 0 0 1rem 0;*/
+    
+  }
+
+}
+
+@media only screen and (max-device-width: 768px){
+  .inner-div {
+    width: 60vw;
+    height: 80vw;
+    background-color: #fff;
+    padding: 2.7rem; /*left and right padding*/
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+    
+  }
+
+  .inner-div h2 {
+    font-size: 5rem;
+    font-weight: 400;
+    /* margin: 0 0 1rem 0;*/
+    
+  }
+
+  .inner-div li {
+    font-size: 4.5rem;
+    margin-top: 1.5rem;
+    list-style: none;
+  }
+
+  #submit, .btn{
+    font-size: 4rem;
+  }
+
+  .web-title{
+    font-family: 'Press Start 2P', cursive;
+    color: #dff9fb;
+    font-size: 2.5rem;
+  }
+
 }
